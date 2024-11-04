@@ -122,13 +122,13 @@ Este sistema no sólo se limita a almacenar información; también está diseña
 
 De este modo, el proyecto permite a los estudiantes aplicar conocimientos de diseño y administración de bases de datos en un contexto práctico, explorando cómo una infraestructura de datos bien construida puede ofrecer un soporte fundamental a las operaciones y la estrategia de una empresa.
 
-\section*{Objetivo}
+\section{Objetivo}
 El alumno analizará una serie de requerimientos y propondrá una solución que atienda a los mismos, aplicando los conceptos vistos en el curso.
 
-\section*{Descripción del Problema}
+\section{Descripción del Problema}
 El problema se divide en dos partes:
 
-\subsection*{Parte Uno}
+\subsection{Parte Uno}
 Consiste en el diseño de una base de datos. Una cadena de papelerías busca innovar la manera en que almacena su información, y los contratan para que desarrollen los sistemas informáticos para satisfacer los siguientes requerimientos:
 
 \begin{itemize}
@@ -150,7 +150,7 @@ Adicional al almacenamiento de información, se requiere que el sistema resuelva
     \item Crear al menos un índice, del tipo que se prefiera y donde se prefiera. Justificar el porqué de la elección en ambos aspectos.
 \end{itemize}
 
-\subsection*{Consideraciones}
+\subsection{Consideraciones}
 \begin{itemize}
     \item Puede haber distintas soluciones al problema.
     \item Los requerimientos enlistados anteriormente deberán ser realizados por medio de PgSQL, con los elementos que se consideren adecuados para resolverlos.
@@ -159,6 +159,69 @@ Adicional al almacenamiento de información, se requiere que el sistema resuelva
     \item Donde esté presente el atributo \texttt{nombre}, está compuesto por nombre, apellido paterno y materno.
     \item La propuesta debe contemplar todas las etapas de diseño, las consideraciones anteriores y un buen manejo de información.
 \end{itemize}
+
+\subsection{Parte dos}
+Una vez diseñada e implementada la base de datos, deberá elegirse la integración de alguno de los siguientes puntos:
+\begin{enumerate}
+    \item Generar un dashboard que permita visualizar, al menos:
+    \begin{itemize}
+        \item Ingresos del mes (Invertido, Ingresos y Ganancias)
+        \item Top 3 de artículos más vendidos
+        \item Empleados que registran más órdenes
+    \end{itemize}
+    \item Programar en C o en Java, un objeto que simule ser una tabla de una base de datos, lo que implica que permita ingresar, borrar, actualizar y consultar información.
+    \item Ingresar, a partir de archivos de texto, la información registrada durante el día a otra base de datos. Se debe orquestar la inserción de cada archivo y tener validaciones del flujo en caso de errores.
+\end{enumerate}
+
+\subsection{Entregables}
+Es necesario entregar lo que se solicita a continuación:
+
+\subsection{Documento}
+Se deberá entregar un documento \textbf{FORMAL} elaborado en LaTeX, que contenga las siguientes secciones:
+\begin{itemize}
+    \item \textbf{Introducción:} Breve descripción del análisis del problema, sus objetivos, su(s) propuesta(s) de solución. Elaborada por ustedes mismos.
+    \item \textbf{Plan de trabajo:} Queda a criterio de cada equipo el grado de detalle que se le dará a esta sección, pero mínimo debe contener descripción general de las actividades a realizar, su correspondiente plan de actividades y un breve detalle de qué hizo cada miembro del equipo.
+    \item \textbf{Diseño:} Descripción de lo realizado en las correspondientes fases de diseño de las bases de datos, agregando los resultados de cada una de ellas.
+    \item \textbf{Implementación:} Descripción de funcionamiento y código de los \textit{stored procedures}, \textit{triggers}, funciones, etc. empleados para cumplir con los requerimientos del problema. También debe incluirse el DDL de la base de datos.
+    \item \textbf{Presentación:} Descripción de lo que hace la modalidad seleccionada como forma de conexión hacia la base de datos.
+    \item \textbf{Conclusiones:} Personales, detallando las dificultades, retos, aciertos, etc. que se presentaron en el proyecto.
+\end{itemize}
+
+\subsection{Código}
+A través de GitHub, se deberá crear una carpeta por equipo donde se anexe lo siguiente, asignando nombres \textbf{ADECUADOS} para cada documento/archivo:
+\begin{itemize}
+    \item El documento del punto anterior
+    \item Códigos fuente de MER, MR
+    \item Script de creación de la base de datos y tablas
+    \item Script para el agregado de información
+    \item Script de toda la programación a nivel BD
+    \item Códigos de lo implementado como parte de la etapa de presentación
+    \item La presentación a emplear a la hora de exponer
+\end{itemize}
+
+\section{Exposición}
+Como parte de la evaluación del curso, se deberá realizar una presentación del proyecto. La idea es simular la presentación de una solución de software a un posible cliente, lo que implica descripción del software, muestras de funcionalidad, solución de dudas, etc. Cada equipo es libre de decidir cómo hacer su presentación, el único detalle es que debe ser \textbf{TOTALMENTE formal}.
+
+\section{Puntos a considerar}
+Se tomará en cuenta lo siguiente, partiendo del porcentaje de calificación estipulado al inicio del semestre:
+\begin{itemize}
+    \item Equipos que se copien en alguna parte del proyecto, su calificación del curso será 5.
+    \item Equipo(s) que reprueben el proyecto o la parte de exposición, deberán presentar examen final sin importar lo obtenido en los otros rubros del curso.
+    \item La calificación del primer examen final será 30\% lo obtenido en el proyecto, 70\% lo obtenido en el examen.
+    \item La seriedad, formalidad, presentación y calidad del proyecto, si bien no tendrán un valor numérico específico, pueden jugar a favor o en contra de la calificación de los rubros correspondientes.
+    \item Cualquier punto no contemplado en el presente documento será determinado por el profesor.
+\end{itemize}
+
+\section{Recomendaciones}
+No es obligatorio, pero se sugieren los siguientes puntos:
+\begin{itemize}
+    \item Delegar correctamente responsabilidades
+    \item No demorar en formar sus equipos y agregar su carpeta en GitHub
+    \item Empleo de herramientas colaborativas
+    \item Empleo de arquitecturas cliente-servidor remotas o servicios en la nube
+    \item Redacción y presentación en inglés
+\end{itemize}
+
 
 \chapter{Desarrollo de la Parte Uno}
 
@@ -308,6 +371,8 @@ A continuación, se detallan las entidades principales junto con sus atributos:
 
 \section{Entidades, atributos y relaciones en modelo relacional}
 
+Basamos nuestra representación en las recomendaciones que nos ofrecia la documenación de PGModeler \nocite{pgModeler_Relationships}, donde revisamos como podiamos representar nuestro caso de estudio a modelo relacional.
+
 \begin{itemize}
     \item \textbf{Proveedores}
         \begin{itemize}
@@ -430,14 +495,15 @@ A continuación, se detallan las entidades principales junto con sus atributos:
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=\textwidth]{Imagenes/modelo_R.png}
-        \caption{Relational Model of our case study}
+        \caption{Modelo relacional de nuestro modelo}
     \end{center}
 \end{figure}
 
 
-\section{Development of the Physical Model}
+\section{Desarrollo del modelo físico}
 
-Based on our relational model, we used the PGModeler tool to obtain our SQL code that we will use to continue with the development of our project.
+Basandonos en nuestro modelo relacional generamos el siguiente código SQL con la herramienta PGModeler y en la documentación del desarollo de sentencias SQL para PostgreSQL \nocite{PostgreSQL_DDL}obtuvimos el siguiente modelo físico.
+
 
 \begin{lstlisting}[language=SQL]
 CREATE TABLE Paises (
@@ -542,5 +608,9 @@ CREATE TABLE ClienteEmails (
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ClienteID)
 );
 \end{lstlisting}
+
+
+\bibliographystyle{apalike}
+\bibliography{ref}
 
 \end{document}
