@@ -14,14 +14,14 @@ Proyecto de Base de Datos del equipo DataBenders
 - En caso de instalarlo en Ubuntu utiicé el comando:
   ```
   sudo apt install postgresql 
-   ```bash
+   ```
 
 - En caso de instalarlo en Fedora utilicé el comando:
   
   ```bash
-'sudo dnf install postgresql-*'  
+  'sudo dnf install postgresql-*'  
 
 #Cargar la base de datos
 - El comando para cargar la base de datos es:
     ```bash
-'psql -U usuario -d baseDeDatos < rutaArchivo.sql'    
+  'psql -U usuario -d baseDeDatos < rutaArchivo.sql'    
