@@ -19,7 +19,7 @@ Proyecto de Base de Datos del equipo DataBenders
   ```bash
   sudo dnf install postgresql-*  
 
-# Cargar la base de datos
+## Cargar la base de datos
 - El comando para cargar la base de datos es:
     ```bash
   psql -U usuario -d baseDeDatos < rutaArchivo.sql    
