@@ -4,7 +4,7 @@ Proyecto de Base de Datos del equipo DataBenders
 ## Integrantes:
 - Soto Huerta Gustavo Isaac
 - Franco Arellano Luis Fernando
-- Integrante 3
+- Villeda Tlecuitl José Eduardo 
 - Integrante 4
 - Integrante 5
 
