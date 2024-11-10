@@ -5,8 +5,7 @@ Proyecto de Base de Datos del equipo DataBenders
 - Soto Huerta Gustavo Isaac
 - Franco Arellano Luis Fernando
 - Villeda Tlecuitl José Eduardo 
-- Integrante 4
-- Integrante 5
+- Zavala Sánchez Eduardo
 
 ## Consideraciones
 
@@ -23,3 +22,7 @@ Proyecto de Base de Datos del equipo DataBenders
 - El comando para cargar la base de datos es:
     ```bash
   psql -U usuario -d baseDeDatos < rutaArchivo.sql    
+
+## Cargar datos a la base 
+
+- Para generar un archivo de inserciones para nuestra base de datos usaremos el
