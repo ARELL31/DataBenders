@@ -23,6 +23,25 @@ Proyecto de Base de Datos del equipo DataBenders
     ```bash
   psql -U usuario -d baseDeDatos < rutaArchivo.sql    
 
-## Cargar datos a la base 
+## Generación y carga de datos a la base de datos 
 
-- Para generar un archivo de inserciones para nuestra base de datos usaremos el
+- Para generar un archivo de inserciones para nuestra base de datos usaremos el compilador de Java que se instalará de la siguiente manera:
+- En caso de instalarlo en Ubuntu utiicé el comando:
+  ```bash
+  sudo apt install openjdk-17* -y  
+
+- En caso de instalarlo en Fedora utilicé el comando:
+  ```bash
+  sudo dnf install java-17-openjdk* -y
+  
+- Una vez instalado procederemos a crear nuestro ejecutable con el comando
+
+  ```bash
+  javac generadorDeInserciones.java
+
+- Y lo ejecutaremos con el comando
+
+  ```bash
+  java generadorDeInserciones
+  
+- Esto nos debería de crear un archivo llamado inserciones.sql que cargaremos a nuestra base de datos como ya se menciono anteriormente.
