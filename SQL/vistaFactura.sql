@@ -47,6 +47,5 @@ FROM
 -- ========================================
 -- Ejemplo de consulta utilizando la vista 'VistaFactura'
 -- Esta consulta obtiene la información de la factura para la venta con VentaID = 1
--- ========================================
-
 SELECT * FROM VistaFactura WHERE VentaID = 1;
+-- ========================================
