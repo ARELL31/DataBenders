@@ -61,9 +61,9 @@ INSERT INTO Productos (CodigoBarras, Nombre, PrecioCompra, PrecioVenta, Foto, St
 
 -- Insertar datos en la tabla Ventas
 INSERT INTO Ventas (Folio, FechaVenta, CantidadTotalPagar, EmpleadoID) VALUES
-('V0001', '2023-10-01', 150.00, 1),
-('V0002', '2023-10-02', 260.00, 2),
-('V0003', '2023-10-03', 75.00, 3);
+('VENT-001', '2023-10-01', 150.00, 1),
+('VENT-002', '2023-10-02', 260.00, 2),
+('VENT-003', '2023-10-03', 75.00, 3);
 
 -- Insertar datos en la tabla DetalleVenta
 INSERT INTO DetalleVenta (VentaID, ProductoID, CantidadProducto, PrecioTotalArticulo, ClienteID) VALUES
