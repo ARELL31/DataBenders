@@ -104,7 +104,7 @@ FROM detalleventa
 WHERE ventaid = 1;
 
 -- 7. Verificar el total a pagar por la venta
-SELECT ventaid, foli, fechaventa, cantidadtotalpagar
+SELECT ventaid, folio, fechaventa, cantidadtotalpagar
 FROM ventas
 WHERE ventaid = 1;
 
