@@ -1,5 +1,5 @@
 -- ========================================
--- Función: obDarm formato similar a VENT-###
+-- Función: Dar formato similar a VENT-###
 -- Descripción:
 -- El trigger genera automaticamente el folio  cuando se 
 -- inserta un nuevo registro a la tabla de ventas
